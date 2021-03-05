@@ -55,7 +55,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          password: ${{ secrets.PASSWORD }}
           script: |
             sudo docker pull dartamid/flask
             sudo docker stop $(sudo docker ps -a -q)
